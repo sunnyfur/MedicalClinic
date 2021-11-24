@@ -1,0 +1,63 @@
+.ourstuff__title {
+    background: rgba(50, 73, 94, 1);
+    color: white;
+    padding-left: 115px;
+    line-height: 52px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.ourstuff__body {
+    margin-left: 115px;
+    margin-right: 115px;
+    color: rgba(50, 73, 94, 1);
+}
+
+.card__image {
+    height: 98px;
+    width: 98px;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 50px;
+    margin-right: 68px;
+    border: none;
+}
+
+.btn-outline-info {
+    width: 160px;
+    height: 50px;
+    border-radius: 15px;
+    color: rgba(50, 73, 94, 1);
+    border-color: rgba(50, 73, 94, 1);
+}
+
+.price-list__title {
+    color: rgba(50, 73, 94, 1);
+    line-height: 52px;
+    margin-bottom: 20px;
+    margin-left: 115px;
+    margin-top: 70px;
+}
+
+.price-list__body {
+    margin-left: 115px;
+    width: 100%;
+    background-image: url(assets/images/Group_104.jpg);
+    color: rgba(50, 73, 94, 1);
+
+}
+
+.btn-read-all {
+    width: 188px;
+    height: 50px;
+    border-radius: 15px;
+    color: rgba(50, 73, 94, 1);
+    border-color: rgba(50, 73, 94, 1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgba(50, 73, 94, 1);
+}

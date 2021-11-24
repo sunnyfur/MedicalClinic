@@ -1,3 +1,7 @@
+:root {
+    font-family: $default-font;
+}
+
 .logo {
     height: 100px;
     @include logoMix($color-acent, $color-light);
@@ -10,8 +14,14 @@
 
 }
 
+
 .sub-title {
     @include titles;
     font-size: 44px;
     margin: 20px 0px;
+}
+
+.small-title {
+    font-size: 16px;
+    font-weight: 800;
 }

@@ -64,4 +64,90 @@
   font-weight: 800;
   font-size: 44px;
 }
+
+/*header, перенесу в SCSS, не разобралась пока */
+.header {
+width: 1400px;
+height: 800px;
+}
+.header__wrapper {
+  display: flex;
+  height: 100%;
+}
+.cardio-block {
+  height: 100%;
+  width: 50%;
+  background: url(/assets/img/header_img/cardio_main.png) bottom left no-repeat;
+  background-color: #E95258;
+}
+.trauma-block {
+  height: 100%;
+  width: 50%;
+  background: url(/assets/img/header_img/trauma_main.png) bottom right no-repeat;
+}
+.header__logo {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 115px;
+  margin-bottom: 135px;
+}
+.logo__picture {
+  padding-right: 20px;
+}
+.text_white {
+  font-family: TT Hoves;
+  color: white;
+}
+.text_black {
+  font-family: 'TT Hoves';
+  color: black;
+}
+.logo__text {
+  font-family: 'TT Hoves';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+
+}
+.header__text {
+font-family: 'TT Hoves';
+font-style: normal;
+
+
+}
+.header__title {
+font-weight: 800;
+font-size: 28px;
+line-height: 36px;
+margin-left: 172px;
+margin-bottom: 50px;
+text-transform: uppercase;
+
+}
+.header__discription {
+  width: 220px;
+  margin-left: 380px;
+  text-align: right;
+}
+.header__services {
+  list-style-position: outside;
+  margin-left: 440px;
+  margin-top: 30px;
+}
+.button {
+margin-left: 440px;
+margin-top: 90px;
+width: 160px;
+height: 50px;
+background: transparent;
+border: 1px solid #F9F9F9;
+box-sizing: border-box;
+border-radius: 30px;
+}
+.navbar {
+  margin-bottom: 135px;
+}
+.header__button_black {
+  border-color: black;
+}
 /*# sourceMappingURL=main.css.map */

@@ -78,7 +78,7 @@
 .header {
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: black;
 }
 
 .about-blocks {
@@ -197,4 +197,3 @@
   text-align: center;
   margin: 0px;
 }
-/*# sourceMappingURL=main.css.map */

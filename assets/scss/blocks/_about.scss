@@ -1,4 +1,4 @@
-    $gutter-ab: 115px;
+    // $gutter-ab: 115px;
 
     .about-blocks {
 
@@ -12,23 +12,37 @@
 
         .about-blocks__img:nth-of-type(1) {
             grid-area: i1;
-            // grid-column: span;
         }
 
         .about-blocks__img:nth-of-type(2) {
             grid-area: i2;
-            // grid-column: span;
         }
 
         .about-blocks__card:nth-of-type(1) {
             grid-area: c1;
-            // grid-column: span;
         }
 
         .about-blocks__card:nth-of-type(2) {
             grid-area: c2;
-            // grid-column: span;
         }
+
+        @media screen and (max-width:$tablet) {
+            grid-template-areas:
+                "i1""c1"
+                "i2""c2";
+        }
+
+
+    }
+
+    $gutter-ab: 30px;
+
+    @media screen and (max-width:calc($desktop-1px)) {
+        $gutter-ab: 70px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        $gutter-ab: 115px;
     }
 
     .about-blocks__img {
@@ -75,7 +89,14 @@
         padding: 0px;
         list-style-type: none;
         display: flex;
+
         column-gap: 70px;
+
+        @media screen and (max-width:$big-tablet) {
+            flex-wrap: wrap;
+            column-gap: 30px;
+
+        }
     }
 
     .card-with-circle__img {
@@ -89,9 +110,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width:$big-tablet) {
+
+            flex: 0 1 45%;
+        }
+
+        @media screen and (max-width: $tablet) {
+            flex: 0 1 100%;
+        }
+
     }
 
     .card-with-circle__text_advantage {
         text-align: center;
         margin: 0px;
+    }
+
+    .header-about {
+        background-image: url("/assets/img/header_img/about_header.png");
+        background-size: cover;
+        color: $color-light;
+
     }

@@ -1,24 +1,26 @@
     // $gutter-ab: 115px;
-    $gutter-ab: 8rem;
+    $gutter-ab: 10vw;
     $container: 80vw;
 
 
     .container-about {
         max-width: $container;
-        // margin: 0 auto;
-        margin: 0px $gutter-ab;
+
 
     }
 
     .body_about {
         color: $color-light;
         background-color: $color-dark;
+
     }
 
     .header-about {
 
         position: relative;
         min-height: 30vw;
+        display: flex;
+        justify-content: center;
 
         &__bg {
             width: 100%;
@@ -35,10 +37,10 @@
             z-index: 2;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
 
             padding-bottom: $gutter-ab;
 
-            border: red solid 1px
         }
 
         &::after {
@@ -146,16 +148,17 @@
     }
 
     .list-with-circle {
-        margin: 0px $gutter-ab;
+        margin: 30px $gutter-ab;
         padding: 0px;
         list-style-type: none;
         display: flex;
 
-        column-gap: 2em;
+        gap: 2em;
 
         @media screen and (max-width:$big-tablet) {
             flex-wrap: wrap;
             column-gap: 30px;
+            row-gap: $gutter-ab;
 
         }
 
@@ -189,3 +192,4 @@
         text-align: center;
         margin: 0px;
     }
+

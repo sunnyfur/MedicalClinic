@@ -1,5 +1,102 @@
 .header {
     width: 100vw;
-    height: 100vh;
-    background-color: black;
+    height: 800px;
 }
+
+.header__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+    
+.cardio-block {
+    height: 100%;
+    width: 50%;
+    background: url(/assets/img/header_img/cardio_main.png) bottom left no-repeat;
+    background-color: $coral;
+
+    .header__logo {
+        display: flex;
+        margin-left: 115px;
+        margin-top: 20px;
+        /*.logo {
+            height: 45px;
+            @include logoMix($color-dark, $color-light);
+        } */
+        .logo-title {
+        @include titles;
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        color: $white;
+    } 
+    } 
+    .text_cardio {
+        margin-bottom: 50px;
+        text-align: right;
+        align-items: end;
+        color: $white;
+        
+
+    }       
+}
+    .trauma-block {
+    width: 50%;
+    background: url(/assets/img/header_img/trauma_main.png) bottom right no-repeat;
+    .text_trauma {
+        align-items: start;
+        text-align: left;
+        .header__title {
+            margin-top: 7px;
+            color: $dark-grey;
+        }
+        .button {
+        border-color: $dark-grey;
+        color: $dark-grey;
+        }
+    }
+    } 
+.header__text {
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    height: 500px;
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+
+    .header__title {
+        @include titles;
+        font-size: 28px;
+        color: $white;
+        font-style: normal;
+        font-weight: 700;
+
+    }
+    .header__discription {
+        width: 220px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-style: 14px;
+        font-weight: 600px;
+    }
+    .header__services {
+        font-size: 14px;
+        line-height: 17px;
+        li {
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        }
+    }
+.header__button {
+        width: 160px;
+        height: 50px;
+        background: transparent;
+        border: 1px solid $white;
+        box-sizing: border-box;
+        border-radius: 30px;
+        color: $white;
+    } 

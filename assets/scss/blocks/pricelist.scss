@@ -1,8 +1,10 @@
 .price-list {
-    background-image: url(../pricelist_images/Group_104.jpg);
+    background-image: url(img/pricelist_images/Group_104.jpg);
     background-size: cover;
 
 &__title {
+    weight: 800;
+    font-size: 44px;
     color: rgba(50, 73, 94, 1);
     line-height: 52px;
     margin-bottom: 20px;
@@ -39,7 +41,7 @@
     border-color: rgba(50, 73, 94, 1);;
 }
 }
-@import "_fonts.scss"
+
 
 
 

@@ -1,35 +1,40 @@
 .ourstuff__title {
-    background: rgba(50, 73, 94, 1);
-    color: white;
-    padding-left: 115px;
-    line-height: 52px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+  background: #32495e;
+  color: white;
+  padding-left: 115px;
+  line-height: 52px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .ourstuff__body {
-    margin-left: 115px;
-    margin-right: 115px;
-    color: rgba(50, 73, 94, 1);
-}
-
-.card__image {
-    height: 98px;
-    width: 98px;
-    margin-bottom: 30px;
+  margin-left: 115px;
+  margin-right: 115px;
+  color: #32495e;
 }
 
 .card {
-    margin-bottom: 50px;
-    margin-right: 68px;
-    border: none;
+  margin-bottom: 50px;
+  margin-right: 68px;
+  border: none;
+}
+
+.card__image {
+  height: 98px;
+  width: 98px;
+  margin-bottom: 30px;
 }
 
 .btn-outline-info {
-    width: 160px;
-    height: 50px;
-    border-radius: 15px;
-    color: rgba(50, 73, 94, 1);
-    border-color: rgba(50, 73, 94, 1);
+  width: 160px;
+  height: 50px;
+  border-radius: 15px;
+  color: #32495e;
+  border-color: #32495e;
 }
 
+.btn-outline-info:hover {
+  background-color: #32495e;
+  color: white;
+  border-color: #32495e;
+}

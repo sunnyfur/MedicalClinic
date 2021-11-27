@@ -4,6 +4,8 @@
 }
 
 .price-list__title {
+  weight: 800;
+  font-size: 44px;
   color: #32495e;
   line-height: 52px;
   margin-bottom: 20px;

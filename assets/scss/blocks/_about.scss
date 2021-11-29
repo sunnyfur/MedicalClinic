@@ -1,195 +1,190 @@
-    // $gutter-ab: 115px;
-    $gutter-ab: 10vw;
-    $container: 80vw;
+$gutter-ab: 10vw;
+$container: 80vw;
 
 
-    .container-about {
-        max-width: $container;
+.container-about {
+    max-width: $container;
 
 
-    }
+}
 
-    .body_about {
-        color: $color-light;
-        background-color: $color-dark;
+.body_about {
+    color: $color-light;
+    background-color: $color-dark;
 
-    }
+}
 
-    .header-about {
+.header-about {
 
-        position: relative;
-        min-height: 30vw;
-        display: flex;
-        justify-content: center;
+    position: relative;
+    min-height: 30vw;
+    display: flex;
+    justify-content: center;
 
-        &__bg {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            object-fit: cover;
-        }
-
-        &__container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            padding-bottom: $gutter-ab;
-
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(0deg, rgba($color-dark, 0.8), rgba($color-dark, 0.8));
-        }
-
-
-    }
-
-    .navbar-brand_about {
-        height: 100px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .logo_about {
-        width: 70px;
-        height: 50px;
-        @include logoMix($color-acent, $color-light);
-    }
-
-    .about-blocks {
-
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-
-        grid-template-areas:
-            "i1 c1"
-            "c2 i2";
-        color: $color-light;
-
-        .about-blocks__img:nth-of-type(1) {
-            grid-area: i1;
-        }
-
-        .about-blocks__img:nth-of-type(2) {
-            grid-area: i2;
-        }
-
-        .about-blocks__card:nth-of-type(1) {
-            grid-area: c1;
-        }
-
-        .about-blocks__card:nth-of-type(2) {
-            grid-area: c2;
-        }
-
-        @media screen and (max-width:$big-tablet) {
-            grid-template-areas:
-                "i1""c1"
-                "i2""c2";
-        }
-
-
-
-    }
-
-
-
-
-
-
-
-    .about-blocks__img {
+    &__bg {
         width: 100%;
         height: 100%;
+        position: absolute;
+        object-fit: cover;
     }
 
-    .card-information {
-        background-color: $color-dark;
+    &__container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        >:nth-child(n) {
-            padding: 0px $gutter-ab;
-        }
+        padding-bottom: $gutter-ab;
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba($color-dark, 0.8), rgba($color-dark, 0.8));
+    }
 
 
+}
+
+.navbar-brand_about {
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo_about {
+    width: 70px;
+    height: 50px;
+    @include logoMix($color-acent, $color-light);
+}
+
+.about-blocks {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "i1 c1"
+        "c2 i2";
+    color: $color-light;
+
+    .about-blocks__img:nth-of-type(1) {
+        grid-area: i1;
+    }
+
+    .about-blocks__img:nth-of-type(2) {
+        grid-area: i2;
+    }
+
+    .about-blocks__card:nth-of-type(1) {
+        grid-area: c1;
+    }
+
+    .about-blocks__card:nth-of-type(2) {
+        grid-area: c2;
+    }
+
+    @media screen and (max-width:$big-tablet) {
+        grid-template-areas:
+            "i1""c1"
+            "i2""c2";
+    }
+
+
+
+}
+
+
+
+
+
+
+
+.about-blocks__img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-information {
+    background-color: $color-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    >:nth-child(n) {
+        padding: 0px $gutter-ab;
+    }
+
+
+
+}
+
+
+.card-information__footer {
+    background-color: $color-acent-dark;
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.advantages {
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 2em 0px;
+}
+
+.sub-title_advantages {
+    color: $color-midle;
+    margin-left: $gutter-ab;
+}
+
+.list-with-circle {
+    margin: 30px $gutter-ab;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+
+    gap: 2em;
+
+    @media screen and (max-width:$big-tablet) {
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: $gutter-ab;
 
     }
 
 
-    .card-information__footer {
-        background-color: $color-acent-dark;
-        min-height: 30%;
-        display: flex;
-        align-items: center;
+}
+
+.card-with-circle__img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+
+}
+
+.card-with-circle_advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 45%;
+
+
+    @media screen and (max-width: $tablet) {
+        flex: 0 1 100%;
     }
 
-    .advantages {
-        background-color: $color-dark;
-        color: $color-light;
-        padding: 2em 0px;
-    }
+}
 
-    .sub-title_advantages {
-        color: $color-midle;
-        margin-left: $gutter-ab;
-    }
-
-    .list-with-circle {
-        margin: 30px $gutter-ab;
-        padding: 0px;
-        list-style-type: none;
-        display: flex;
-
-        gap: 2em;
-
-        @media screen and (max-width:$big-tablet) {
-            flex-wrap: wrap;
-            column-gap: 30px;
-            row-gap: $gutter-ab;
-
-        }
-
-
-    }
-
-    .card-with-circle__img {
-        border-radius: 50%;
-        width: 10rem;
-        height: 10rem;
-
-    }
-
-    .card-with-circle_advantage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media screen and (max-width:$big-tablet) {
-
-            flex: 0 1 45%;
-        }
-
-        @media screen and (max-width: $tablet) {
-            flex: 0 1 100%;
-        }
-
-    }
-
-    .card-with-circle__text_advantage {
-        text-align: center;
-        margin: 0px;
-    }
-
+.card-with-circle__text_advantage {
+    text-align: center;
+    margin: 0px;
+}

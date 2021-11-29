@@ -17,24 +17,35 @@
         <div class="header__wrapper">
             <div class="cardio-block cardio-block_short">
                 <div class="header__logo">
-                    <!-- добавть ссылку переход на главную страницу при нажатии лого -->
+                    <!-- добавить ссылку переход на главную страницу при нажатии лого -->
                     <div class="logo__img">
-                        <img src="/assets/img/header_img/logo.png" alt="logo">
-                    </div>
-                    <div class="logo__text logo-title">TULPAR</div>
+                        <a class="logo__link" href="#"> <img src="/assets/img/header_img/logo.png" alt="logo">
+                    </div></a>
+                    <a href="#" class="logo__link">
+                        <div class="logo__text logo-title">TULPAR</div>
+                    </a>
                 </div>
                 <div class="header__text text_cardio">
-                    <h1 class="header__title">Кардио-реабилитационный центр
+                    <h1 class="header__title"><a class="title__link title__link_cardio" href="#">Кардио-реабилитационный
+                            центр</a>
                     </h1>
                     <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
                         and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                     </div>
-                    <ul class="header__services">
-                        <li class="services-item">Название услуги</li>
-                        <li class="services-item">Название услуги</li>
-                        <li class="services-item">Название услуги</li>
-                        <li class="services-item">Название услуги</li>
+                    <ul class="header__services header__services_cardio">
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_cardio">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_cardio">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_cardio">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_cardio">Название услуги</li>
+                        </a>
                     </ul>
                     <button class="button header__button button_white">
                         <!--сделать текст ссылкой внутри-->
@@ -43,67 +54,83 @@
                 </div>
             </div>
             <div class="trauma-block trauma-block_short">
-                <div class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Главная</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-expanded="false">
-                                        Наши услуги
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a></li>
-                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a></li>
-                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a></li>
-                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a></li>
+                <div class="container container__menu">
+                    <div class="row row__menu">
+                        <div class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fiuid">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Главная</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                                Наши услуги
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Отчёты</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                                О нас
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">О нас</a></li>
+                                                <li><a class="dropdown-item" href="#">О нас</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Новости</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-expanded="false">
+                                                РУС
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">ENG</a></li>
+                                                <li><a class="dropdown-item" href="#">ENG</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Отчёты</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-expanded="false">
-                                        О нас
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">О нас</a></li>
-                                        <li><a class="dropdown-item" href="#">О нас</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Новости</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-expanded="false">
-                                        РУС
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">ENG</a></li>
-                                        <li><a class="dropdown-item" href="#">ENG</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="header__text text_trauma">
-                    <h1 class="header__title">Травма-реабилитационный центр
-                    </h1>
+                    <h1 class="header__title"><a class="title__link title__link_trauma" href="#">Травма-реабилитационный
+                            центр</a></h1>
                     <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
                         and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                     </div>
                     <ul class="header__services">
-                        <li class="services-item">Название услуги</li>
-                        <li class="services-item">Название услуги</li>
-                        <li class="services-item">Название услуги</li>
-                        <li class="services-item">Название услуги</li>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#" alt="services">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
                     </ul>
                     <button class="button header__button button_grey">
                         <!--сделать текст ссылкой внутри-->

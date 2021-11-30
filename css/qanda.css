@@ -1,0 +1,60 @@
+.qanda {
+    background-color: #32495E;
+}
+
+.qanda__title {
+    margin-top: 60px;
+    background-color: #8093AC;
+    padding-left: 115px;
+    height: 68px;
+    color: white;
+
+}
+
+.qanda__body {
+    margin-top: 64px;
+    margin-left: 68px;
+    color:white;
+}
+
+.form-check {
+    margin-bottom: 20px;
+}
+
+.form-check-label {
+    padding-right: 172px;
+    font-weight: bolder;
+}
+
+.form-check-input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content:url("/assets/qanda_images/Component.png");
+    display: inline-block;
+    visibility: visible;
+    cursor: pointer;
+    
+}
+
+.form-check-input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content:url("/assets/qanda_images/Componentred.png");
+    display: inline-block;
+    visibility: visible;
+    
+}
+.qanda__body-answer {
+    padding-right: 115px;
+}
+.qanda__body-answer-title {
+    margin-bottom: 20px;
+}

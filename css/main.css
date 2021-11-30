@@ -779,6 +779,7 @@ body {
   line-height: 52px;
   margin-top: 70px;
   margin-bottom: 50px;
+  font-family: TT Hoves;
 }
 
 .ourstuff__body {
@@ -826,6 +827,7 @@ body {
   margin-bottom: 20px;
   margin-left: 115px;
   margin-top: 70px;
+  font-family: TT Hoves;
 }
 
 .price-list__body {
@@ -869,6 +871,7 @@ body {
   padding-left: 115px;
   height: 68px;
   color: white;
+  font-family: TT Hoves;
 }
 
 .qanda__body {

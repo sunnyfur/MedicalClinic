@@ -1,0 +1,44 @@
+.common__button {
+    width: 160px;
+    height: 50px;
+    background: transparent;
+    padding: 10px 30px;
+    text-align: center;
+
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    transition: 0.9s ease-out;
+
+
+    &:hover {
+        border: 1px solid $color-acent;
+        background: $color-acent;
+        transition: 0.9s ease-out;
+
+
+        color: $color-light;
+
+    }
+
+
+}
+
+
+.common__button_light {
+    border: 1px solid $color-light;
+}
+
+.common__button_dark {
+    border: 1px solid $color-dark;
+}
+
+.button__text {
+    color: $color-light;
+    text-decoration: none;
+}
+
+.button__position {
+    display: flex;
+    justify-content: center;
+}

@@ -11,7 +11,8 @@
         "../assets/scss/blocks/_header.scss",
         "../assets/scss/blocks/_footer.scss",
         "../assets/scss/blocks/_button.scss",
-        "../assets/scss/blocks/_about.scss"
+        "../assets/scss/blocks/_about.scss",
+        "../assets/scss/blocks/_usluga_1.scss"
     ],
     "names": [],
     "file": "main.css"

@@ -560,3 +560,90 @@ body {
   color: #F9F9F9;
   text-decoration: none;
 }
+
+.ourstuff__title {
+  background: #32495e;
+  color: white;
+  padding-left: 115px;
+  line-height: 52px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.ourstuff__body {
+  margin-left: 115px;
+  margin-right: 115px;
+  color: #32495e;
+}
+
+.card {
+  margin-bottom: 50px;
+  margin-right: 68px;
+  border: none;
+}
+
+.card__image {
+  height: 98px;
+  width: 98px;
+  margin-bottom: 30px;
+}
+
+.btn-outline-info {
+  width: 160px;
+  height: 50px;
+  border-radius: 15px;
+  color: #32495e;
+  border-color: #32495e;
+}
+
+.btn-outline-info:hover {
+  background-color: #32495e;
+  color: white;
+  border-color: #32495e;
+}
+
+.price-list {
+  background-image: url("/assets/img/pricelist_images/Group_104.jpg");
+  background-size: cover;
+}
+
+.price-list__title {
+  weight: 800;
+  font-size: 44px;
+  color: #32495e;
+  line-height: 52px;
+  margin-bottom: 20px;
+  margin-left: 115px;
+  margin-top: 70px;
+}
+
+.price-list__body {
+  margin-left: 115px;
+  color: #32495e;
+  width: 100%;
+}
+
+.price-list__subtitle {
+  margin-bottom: 50px;
+  color: #32495e;
+  line-height: 17px;
+}
+
+.price-list__price {
+  font-weight: bolder;
+}
+
+.btn-read-all {
+  width: 188px;
+  height: 50px;
+  border-radius: 15px;
+  color: #32495e;
+  border-color: #32495e;
+  margin-top: 50px;
+}
+
+.btn-read-all:hover {
+  background-color: #32495e;
+  color: white;
+  border-color: #32495e;
+}

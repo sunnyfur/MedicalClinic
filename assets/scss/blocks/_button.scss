@@ -2,8 +2,10 @@
     width: 160px;
     height: 50px;
     background: transparent;
-    padding: 10px 30px;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     box-sizing: border-box;
     border-radius: 30px;
@@ -15,8 +17,6 @@
         border: 1px solid $color-acent;
         background: $color-acent;
         transition: 0.9s ease-out;
-
-
         color: $color-light;
 
     }
@@ -27,14 +27,16 @@
 
 .common__button_light {
     border: 1px solid $color-light;
+    color: $color-light;
 }
 
 .common__button_dark {
     border: 1px solid $color-dark;
+    color: $color-dark;
 }
 
 .button__text {
-    color: $color-light;
+
     text-decoration: none;
 }
 

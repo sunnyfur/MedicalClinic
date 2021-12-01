@@ -2,13 +2,38 @@
     width: 80vw;
     margin: 0 auto;
 }
+.recomendation__text {
+    @media screen and (max-width:$large-desktop) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    }
+    @media screen and (max-width:$tablet) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width:$mobile) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
 .recomendation__items {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
+    @media screen and (max-width:$tablet) {
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width:$mobile) {
+        margin-bottom: 20px;
+    }
     .recomendation__item {
         .recomendation_img {
             width: 100%;
             height: 100%;
-        }
     }
+    }
+}
+.contacts {
+    width: 80vw;
+    margin: 0 auto;
 }

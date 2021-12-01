@@ -927,10 +927,15 @@ body {
   margin: 0 auto;
 }
 
+.recomendation__text {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 @media screen and (max-width: 1560px) {
   .recomendation__text {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -978,4 +983,149 @@ body {
 .contacts {
   width: 80vw;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1560px) {
+  .contacts__text {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacts__text {
+    margin-bottom: 10px;
+  }
+}
+
+.image-map {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__items {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__items {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacts__items {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+  .contacts__discription {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__discription {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacts__discription {
+    margin-top: 10px;
+  }
+}
+
+.address {
+  max-width: 210px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 1280px) {
+  .address {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .address {
+    margin-right: 10px;
+  }
+}
+
+.telephone {
+  max-width: 210px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 1280px) {
+  .telephone {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .telephone {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .telephone {
+    margin-right: 10px;
+  }
+}
+
+.alternative {
+  max-width: 260px;
+}
+
+.address__title, .telephone__title, .alternative__title {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1560px) {
+  .address__title, .telephone__title, .alternative__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address__title, .telephone__title, .alternative__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .address__title, .telephone__title, .alternative__title {
+    margin-bottom: 5px;
+  }
+}
+
+.address, .telephone, .alternative {
+  margin-bottom: 10px;
 }

@@ -3,9 +3,11 @@
     margin: 0 auto;
 }
 .recomendation__text {
-    @media screen and (max-width:$large-desktop) {
     margin-top: 70px;
     margin-bottom: 70px;
+    @media screen and (max-width:$large-desktop) {
+    margin-top: 60px;
+    margin-bottom: 60px;
     }
     @media screen and (max-width:$tablet) {
         margin-top: 40px;

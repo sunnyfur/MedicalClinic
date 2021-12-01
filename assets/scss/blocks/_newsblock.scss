@@ -50,6 +50,7 @@
         .description {
             animation: show-animate 2s;
             max-height: 60%;
+            min-height: 50%;
             background-color: $color-acent;
             will-change: all;
             transition: all 2s ease-out;
@@ -105,7 +106,8 @@
 
 
     width: 100%;
-    max-height: 20%;
+    min-height: 20%;
+    max-height: 30%;
     overflow: hidden;
     will-change: all;
     transition: all 3s ease-in;

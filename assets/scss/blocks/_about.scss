@@ -14,6 +14,8 @@ $container: 80vw;
 
 }
 
+
+
 .header-about {
 
     position: relative;
@@ -21,11 +23,21 @@ $container: 80vw;
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width:$tablet) {
+        min-height: 50vw;
+    }
+
+    @media screen and (max-width:$mobile) {
+        min-height: 60vw;
+    }
+
+
     &__bg {
         width: 100%;
         height: 100%;
         position: absolute;
         object-fit: cover;
+        z-index: -2;
     }
 
     &__container {
@@ -38,6 +50,8 @@ $container: 80vw;
         flex-direction: column;
         justify-content: space-between;
 
+        padding-left: $gutter-ab;
+        padding-right: $gutter-ab;
         padding-bottom: $gutter-ab;
 
     }
@@ -47,6 +61,7 @@ $container: 80vw;
         position: absolute;
         width: 100%;
         height: 100%;
+        z-index: -1;
         background: linear-gradient(0deg, rgba($color-dark, 0.8), rgba($color-dark, 0.8));
     }
 
@@ -56,8 +71,11 @@ $container: 80vw;
 .navbar-brand_about {
     height: 100px;
     display: flex;
+    gap: 20px;
     justify-items: center;
     align-items: center;
+
+
 }
 
 .logo_about {
@@ -65,6 +83,47 @@ $container: 80vw;
     height: 50px;
     @include logoMix($color-acent, $color-light);
 }
+
+.dropdown-item_about {
+    display: block;
+    color: $color-dark;
+    text-decoration: none;
+    width: 100%;
+    // height: 100%;
+    text-align: inherit;
+    padding: 0.25rem 1rem;
+    white-space: nowrap;
+
+    &:hover {
+        color: $color-light;
+        background-color: $color-dark;
+    }
+
+    &:active {
+        background-color: $color-acent;
+    }
+}
+
+.navbar-nav {
+    @media screen and (max-width:991px) {
+
+        background-color: rgba($color-midle, 0.8);
+    }
+
+}
+
+.nav-link_about {
+    @media screen and (max-width:991px) {
+
+        padding: 5px;
+
+        &:hover {
+            background-color: rgba($color-dark, 0.8);
+        }
+    }
+}
+
+
 
 .about-blocks {
 
@@ -120,7 +179,7 @@ $container: 80vw;
     justify-content: space-between;
 
     >:nth-child(n) {
-        padding: 0px $gutter-ab;
+        padding: 20px $gutter-ab;
     }
 
 
@@ -133,6 +192,7 @@ $container: 80vw;
     min-height: 30%;
     display: flex;
     align-items: center;
+
 }
 
 .advantages {

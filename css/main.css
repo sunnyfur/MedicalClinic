@@ -921,3 +921,22 @@ body {
 .qanda__body-answer-title {
   margin-bottom: 20px;
 }
+
+.recomendation {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.recomendation__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recomendation__items .recomendation__item .recomendation_img {
+  width: 100%;
+  height: 100%;
+}

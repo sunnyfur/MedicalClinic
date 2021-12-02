@@ -1,0 +1,19 @@
+.footer {
+    background-color: #333333;
+    color: #F9F9F9;
+    font-style: normal;
+
+    .footer_menu {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        margin-left: 115px;
+        margin-right: 115px;
+        justify-content: space-between;
+    }
+
+    #footernav {
+        display: flex;
+        flex-direction: column;
+    }
+}

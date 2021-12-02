@@ -9,15 +9,18 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Header</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <div class="cardio-block cardio-block_short">
+            <div class="cardio-block">
                 <div class="header__logo">
-                    <!-- добавить ссылку переход на главную страницу при нажатии лого -->
                     <div class="logo__img">
                         <a class="logo__link" href="#"> <img src="/assets/img/header_img/logo.png" alt="logo">
                     </div></a>
@@ -48,18 +51,17 @@
                         </a>
                     </ul>
                     <button class="button header__button button_white">
-                        <!--сделать текст ссылкой внутри-->
                         <div class="button__text text_white">Все услуги</div>
                     </button>
                 </div>
             </div>
-            <div class="trauma-block trauma-block_short">
+            <div class="trauma-block">
                 <div class="container container__menu">
                     <div class="row row__menu">
                         <div class="navbar navbar-expand-lg navbar-light">
                             <div class="container-fiuid">
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar navbar-nav me-auto mb-2 mb-lg-0">
+                                    <ul class="navbar navbar-nav me-auto mb-2">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Главная</a>
                                         </li>
@@ -111,43 +113,55 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="header__text text_trauma">
+                            <h1 class="header__title"><a class="title__link title__link_trauma"
+                                    href="#">Травма-реабилитационный
+                                    центр</a></h1>
+                            <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
+                                and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            </div>
+                            <ul class="header__services">
+                                <a class="services-item__link" href="#">
+                                    <li class="services-item services-item_trauma">Название услуги</li>
+                                </a>
+                                <a class="services-item__link" href="#">
+                                    <li class="services-item services-item_trauma">Название услуги</li>
+                                </a>
+                                <a class="services-item__link" href="#">
+                                    <li class="services-item services-item_trauma">Название услуги</li>
+                                </a>
+                                <a class="services-item__link" href="#">
+                                    <li class="services-item services-item_trauma">Название услуги</li>
+                                </a>
+                            </ul>
+                            <button class="button header__button button_grey">
+                                <div class="button__text text_grey">Все услуги</div>
+                            </button>
+                            <div class="social-icons">
+                                <div class="social-icons__item icons__instagram">
+                                    <a href="#" class="fa fa-instagram"></a>
+                                </div>
+                                <div class="social-icons__item icons__phone">
+                                    <a href="#" class="far fa-phone-alt"></a>
+                                </div>
+                                <div class="social-icons__item icons__edit">
+                                    <a href="#" class="fa fa-pencil-square-o"></a>
+                                </div>
+                                <div class="social-icons__item icons__whatsapp">
+                                    <a href="#" class="fa fa-whatsapp"></a>
+                                </div>
+                                <div class="social-icons__item fa icons__coral">
+                                    <a href="#">...</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="header__text text_trauma">
-                    <h1 class="header__title"><a class="title__link title__link_trauma" href="#">Травма-реабилитационный
-                            центр</a></h1>
-                    <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
-                        and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                    </div>
-                    <ul class="header__services">
-                        <a class="services-item__link" href="#">
-                            <li class="services-item services-item_trauma">Название услуги</li>
-                        </a>
-                        <a class="services-item__link" href="#">
-                            <li class="services-item services-item_trauma">Название услуги</li>
-                        </a>
-                        <a class="services-item__link" href="#">
-                            <li class="services-item services-item_trauma">Название услуги</li>
-                        </a>
-                        <a class="services-item__link" href="#">
-                            <li class="services-item services-item_trauma">Название услуги</li>
-                        </a>
-                    </ul>
-                    <button class="button header__button button_grey">
-                        <div class="button__text text_grey">Все услуги</div>
-                    </button>
-                    <ul class="social-icons">
-                        <li><a class="social-icon-instagram" href="#" title="..." target="_blank" rel="noopener"></a>
-                        </li>
-                        <li><a class="social-icon-call" href="#" title="..." target="_blank" rel="noopener"></a></li>
-                        <li><a class="social-icon-twitter" href="#" title="..." target="_blank" rel="noopener"></a></li>
-                        <li><a class="social-icon-watsapp" href="#" title="..." target="_blank" rel="noopener"></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </div>
         </div>
     </header>
     <main>

@@ -4,11 +4,12 @@
 
     &__title {
         margin-top: 60px;
-        background-color: #8093AC;
+        background-color: rgba(128, 147, 172, 0.4);
         padding-left: 115px;
         height: 68px;
         color: white;
-        font-family: TT Hoves;
+        font-family: 'TTHoves' !important;
+        font-weight: 800;
     }
 
     &__body {

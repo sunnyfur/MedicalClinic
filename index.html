@@ -18,18 +18,87 @@
 
 <body>
     <header class="header">
+        <div class="header-menu__container">
+
+            <div class="header__logo">
+                <div class="logo__img">
+                    <a class="logo__link" href="#"> <img src="/assets/img/header_img/logo.png" alt="logo"></a>
+                </div>
+                <a href="#" class="logo__link">
+                    <div class="logo__text logo-title">TULPAR</div>
+                </a>
+            </div>
+            <div class="navbar navbar-expand-lg navbar-light">
+                <button class="header-menu__button navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo03">
+
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar__index navbar navbar-nav me-auto mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Главная</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Наши услуги
+                                    </a>
+                                    <ul class=" dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный
+                                                центр</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный
+                                                центр</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный
+                                                центр</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный
+                                                центр</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Отчёты</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        О нас
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">О нас</a></li>
+                                        <li><a class="dropdown-item" href="#">О нас</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Новости</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        РУС
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">ENG</a></li>
+                                        <li><a class="dropdown-item" href="#">ENG</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header__wrapper">
             <div class="cardio-block">
-                <div class="header__logo">
-                    <div class="logo__img">
-                        <a class="logo__link" href="#"> <img src="/assets/img/header_img/logo.png" alt="logo">
-                    </div></a>
-                    <a href="#" class="logo__link">
-                        <div class="logo__text logo-title">TULPAR</div>
-                    </a>
-                </div>
                 <div class="header__text text_cardio">
                     <h1 class="header__title"><a class="title__link title__link_cardio" href="#">Кардио-реабилитационный
+                            <br>
                             центр</a>
                     </h1>
                     <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
@@ -50,114 +119,49 @@
                             <li class="services-item services-item_cardio">Название услуги</li>
                         </a>
                     </ul>
-                    <button class="button header__button button_white">
-                        <div class="button__text text_white">Все услуги</div>
-                    </button>
+                    <div class="button__position">
+                        <a class="common__button button__text common__button_light" href="#">Все услуги</a>
+                    </div>
                 </div>
             </div>
             <div class="trauma-block">
-                <div class="container container__menu">
-                    <div class="row row__menu">
-                        <div class="navbar navbar-expand-lg navbar-light">
-                            <div class="container-fiuid">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar navbar-nav me-auto mb-2">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Главная</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Наши услуги
-                                            </a>
-                                            <ul class=" dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a>
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a>
-                                                </li>
-                                            </ul>
-
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Отчёты</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-expanded="false">
-                                                О нас
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">О нас</a></li>
-                                                <li><a class="dropdown-item" href="#">О нас</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Новости</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                role="button" data-toggle="dropdown" aria-expanded="false">
-                                                РУС
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="header__text text_trauma">
+                    <h1 class="header__title"><a class="title__link title__link_trauma" href="#">Травма-реабилитационный
+                            <br>
+                            центр</a></h1>
+                    <div class="header__discription">Lorem Ipsum is simply dummy text of the
+                        printing
+                        and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the
+                    </div>
+                    <ul class="header__services">
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                    </ul>
+                    <div class="button__position">
+                        <a class="common__button button__text common__button_dark" href="#">Все услуги</a>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icons__item icons__instagram">
+                            <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
                         </div>
 
-
-                        <div class="header__text text_trauma">
-                            <h1 class="header__title"><a class="title__link title__link_trauma"
-                                    href="#">Травма-реабилитационный
-                                    центр</a></h1>
-                            <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
-                                and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                            </div>
-                            <ul class="header__services">
-                                <a class="services-item__link" href="#">
-                                    <li class="services-item services-item_trauma">Название услуги</li>
-                                </a>
-                                <a class="services-item__link" href="#">
-                                    <li class="services-item services-item_trauma">Название услуги</li>
-                                </a>
-                                <a class="services-item__link" href="#">
-                                    <li class="services-item services-item_trauma">Название услуги</li>
-                                </a>
-                                <a class="services-item__link" href="#">
-                                    <li class="services-item services-item_trauma">Название услуги</li>
-                                </a>
-                            </ul>
-                            <button class="button header__button button_grey">
-                                <div class="button__text text_grey">Все услуги</div>
-                            </button>
-                            <div class="social-icons">
-                                <div class="social-icons__item icons__instagram">
-                                    <a href="#" class="fa fa-instagram"></a>
-                                </div>
-                                <div class="social-icons__item icons__phone">
-                                    <a href="#" class="far fa-phone-alt"></a>
-                                </div>
-                                <div class="social-icons__item icons__edit">
-                                    <a href="#" class="fa fa-pencil-square-o"></a>
-                                </div>
-                                <div class="social-icons__item icons__whatsapp">
-                                    <a href="#" class="fa fa-whatsapp"></a>
-                                </div>
-                                <div class="social-icons__item fa icons__coral">
-                                    <a href="#">...</a>
-                                </div>
-
-                            </div>
+                        <div class="social-icons__item icons__edit">
+                            <a href="#" target="_blank"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+                        </div>
+                        <div class="social-icons__item icons__whatsapp">
+                            <a href="#" target="_blank"><i class="fa fa-whatsapp fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
@@ -281,7 +285,7 @@
     </main>
     <footer>
         <div class="footer__contacts">
-            <div class="footer__contacts__block footer__contacts__block_logo"> 
+            <div class="footer__contacts__block footer__contacts__block_logo">
                 <img src="./assets/img/logo.svg" alt="logo">
                 <p class="footer__text">© Все права защищены 2019 "Тулпар"</p>
             </div>

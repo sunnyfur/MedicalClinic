@@ -1,40 +1,51 @@
+$radius:25px;
+$gutter-social:$radius;
+
 .social {
     position: fixed;
 
-
     z-index: 20;
-    right: 150px;
-    top: calc(30vw - 27px);
+    right: calc(#{$gutter-ab} - #{$radius} * 4);
     margin: auto;
 
+    top: calc(30vw - #{$radius} - 10px);
 
+
+    @media screen and (max-width:$tablet) {
+        display: none;
+    }
+
+    @media screen and (max-width:$big-tablet) {
+        right:calc(#{$gutter-ab} - #{$radius} * 2);
+    }
 }
 
-.box {
-    height: calc(75px + 25px);
+//need for correct animation
+.social__position {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
 
-
     overflow: hidden;
     flex-direction: row-reverse;
 }
 
+.social__position_elements {
+    margin-right:calc(-#{$radius} * 2);
+    padding-right: calc(#{$radius} * 2);
+    height: calc(#{$radius} * 2 + #{$gutter-social} * 2);
+}
+
+
 .social-all {
     list-style-type: none;
     margin: 0px;
-    // position: absolute;
-    // top: 10px;
-    // right: 85px;
-
-
 
     display: flex;
-
     flex-direction: row-reverse;
-    gap: 20px;
+    gap: $gutter-social;
 
     opacity: 0;
     transform-origin: right center;
@@ -51,30 +62,28 @@
 
 }
 
-.box_soc {
-    margin-right: -50px;
-}
 
 .btn-social {
 
-    height: 50px;
-    width: 50px;
-    color: $color-light;
-    border-radius: 50%;
-    border: $color-light 1px solid;
-    transition: .2s ease-out;
+    height: calc(#{$radius} * 2);
+    width: calc(#{$radius} * 2);
+
     display: flex;
     justify-content: center;
     align-items: center;
 
+    color: $color-light;
+    border-radius: 50%;
+    border: $color-light 1px solid;
+    transition: .2s ease-out;
 
 }
 
 .btn-social_all {
     @include btn-social-color ($color-acent);
-    width: 70px;
-    height: 70px;
-    margin: 25px;
+    width: calc(#{$radius} * 2);
+    height: calc(#{$radius} * 2);
+    margin: $gutter-social;
     z-index: 30;
 
 }

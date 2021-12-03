@@ -1,0 +1,46 @@
+footer {
+    display: flex;
+    background-color: #333333;
+    color: #F9F9F9;
+    font-style: normal;
+    width: 100vw;
+    padding-left: 115px;
+    padding-right: 115px;
+    justify-content: space-between;
+
+    .footer__text {
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+    }
+
+    .footer__title {
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+    }
+
+    .footer__contacts {
+        display: flex;
+
+        .footer__contacts__block {
+            display: flex;
+            flex-direction: column;
+
+
+            .footer__contacts__block_logo {}
+
+            .footer__contacts__block_nav {}
+
+            .footer__contacts__block_info {}
+        }
+    }
+
+
+}

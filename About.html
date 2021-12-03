@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>О нас</title>
@@ -38,12 +39,12 @@
 
                     <nav class="navbar-nav ">
                         <a class="nav-link nav-link_about" href="index.html">Главная</a>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle nav-link_about" href="#" id="navbarDropdownMenuLink"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Наши услуги
                             </a>
-                            <ul class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class=" dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item_about" href="#">Травма-реабилитационный центр</a></li>
                                 <li><a class="dropdown-item_about" href="#">Кардио-реабилитационный центр</a></li>
                                 <li><a class="dropdown-item_about" href="#">Травма-реабилитационный центр</a></li>
@@ -63,100 +64,132 @@
             <h1 class="main-title">Об образовательном центре Tulpar</h1>
         </div>
     </header>
-    <div class="about-blocks">
+    <main>
+        <div class="about-blocks">
 
-        <img class="about-blocks__img" src="assets/img/AboutUs/ShortInform.png" alt="О нас">
-        <div class="about-blocks__card card-information">
-            <div class="card-information__text">
-                <h2 class="sub-title">Коротко о нас</h2>
-                <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry.
-                    Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img class="about-blocks__img" src="assets/img/AboutUs/ShortInform.png" alt="О нас">
+            <div class="about-blocks__card card-information">
+                <div class="card-information__text">
+                    <h2 class="sub-title">Коротко о нас</h2>
+                    <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with
+                        the
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="card-information__footer">
+                    <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, </p>
+                </div>
             </div>
-            <div class="card-information__footer">
-                <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, </p>
+
+            <img class="about-blocks__img" src="assets/img/AboutUs/OptionalInfo.png" alt="Доп информация">
+            <div class="about-blocks__card card-information">
+
+                <div class="card-information__text">
+                    <h2 class="sub-title">Дополнительная информация</h2>
+                    <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with
+                        the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="card-information__footer">
+                    <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem
+                        Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, </p>
+                </div>
             </div>
+            </article>
         </div>
-
-        <img class="about-blocks__img" src="assets/img/AboutUs/OptionalInfo.png" alt="Доп информация">
-        <div class="about-blocks__card card-information">
-
-            <div class="card-information__text">
-                <h2 class="sub-title">Дополнительная информация</h2>
-                <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry.
-                    Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-            <div class="card-information__footer">
-                <p class="common-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, </p>
-            </div>
-        </div>
+        <article class="advantages">
+            <h2 class="sub-title sub-title_advantages">Почему мы?</h2>
+            <ul class="list-with-circle">
+                <li class="card-with-circle_advantage">
+                    <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
+                    <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
+                    <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text</p>
+                </li>
+                <li class="card-with-circle_advantage">
+                    <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
+                    <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
+                    <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text</p>
+                </li>
+                <li class="card-with-circle_advantage">
+                    <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
+                    <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
+                    <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text</p>
+                </li>
+                <li class="card-with-circle_advantage">
+                    <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
+                    <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
+                    <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text</p>
+                </li>
+            </ul>
         </article>
-    </div>
-    <article class="advantages">
-        <h2 class="sub-title sub-title_advantages">Почему мы?</h2>
-        <ul class="list-with-circle">
-            <li class="card-with-circle_advantage">
-                <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
-                <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
-                <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text</p>
-            </li>
-            <li class="card-with-circle_advantage">
-                <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
-                <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
-                <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text</p>
-            </li>
-            <li class="card-with-circle_advantage">
-                <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
-                <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
-                <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text</p>
-            </li>
-            <li class="card-with-circle_advantage">
-                <img class="card-with-circle__img" src="/assets/img/AboutUs/OptionalInfo.png" alt="Преимущество 1">
-                <h3 class="small-title card-with-circle__title_advantage">Преимущество 1</h3>
-                <p class="card-with-circle__text_advantage">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text</p>
-            </li>
-        </ul>
-    </article>
+        <div class="social ">
+
+            <div class="box">
+                <button class=" btn-social btn-social_all"><img src="assets/img/icons/social.svg"></button>
+                <div class="box box_soc">
+                    <ul class="social-all ">
+                        <li class="social__item ">
+                            <button class=" btn-social btn-social_chat"><img
+                                    src="assets/img/icons/Chat.svg"></img></button>
+                        </li>
+                        <li class="social__item ">
+                            <button class=" btn-social btn-social_mail"><img src="assets/img/icons/Mail.svg"></button>
+                        </li>
+                        <li class="social__item ">
+                            <button class=" btn-social btn-social_phone"><img src="assets/img/icons/Phone.svg"></button>
+                        </li>
+                        <li class="social__item ">
+                            <button class=" btn-social btn-social_inst"><img src="assets/img/icons/Inst.svg"></button>
+                        </li>
+                    </ul>
 
 
+                </div>
+            </div>
+    </main>
 
 
 
@@ -166,7 +199,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
-
+    <script src="https://kit.fontawesome.com/03971be3aa.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/anim.js"></script>
 </body>
 
 </html>

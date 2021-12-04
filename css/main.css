@@ -1074,15 +1074,14 @@ footer .footer__contacts .footer__contacts__block {
 .ourstuff__title {
   background: #32495e;
   color: white;
-  padding-left: 115px;
+  padding-left: 155px;
   line-height: 52px;
-  margin-top: 70px;
   margin-bottom: 50px;
   font-family: TT Hoves;
 }
 
 .ourstuff__body {
-  margin-left: 115px;
+  margin-left: 155px;
   margin-right: 115px;
   color: #32495e;
 }
@@ -1125,7 +1124,6 @@ footer .footer__contacts .footer__contacts__block {
   line-height: 52px;
   margin-bottom: 20px;
   padding-left: 155px;
-  margin-top: 70px;
   font-family: TT Hoves;
 }
 

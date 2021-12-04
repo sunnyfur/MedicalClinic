@@ -1074,15 +1074,14 @@ footer .footer__contacts .footer__contacts__block {
 .ourstuff__title {
   background: #32495e;
   color: white;
-  padding-left: 115px;
+  padding-left: 155px;
   line-height: 52px;
-  margin-top: 70px;
   margin-bottom: 50px;
   font-family: TT Hoves;
 }
 
 .ourstuff__body {
-  margin-left: 115px;
+  margin-left: 155px;
   margin-right: 115px;
   color: #32495e;
 }
@@ -1102,7 +1101,7 @@ footer .footer__contacts .footer__contacts__block {
 .btn-outline-info {
   width: 160px;
   height: 50px;
-  border-radius: 15px;
+  border-radius: 30px;
   color: #32495e;
   border-color: #32495e;
 }
@@ -1124,15 +1123,15 @@ footer .footer__contacts .footer__contacts__block {
   color: #32495e;
   line-height: 52px;
   margin-bottom: 20px;
-  margin-left: 115px;
-  margin-top: 70px;
+  padding-left: 155px;
   font-family: TT Hoves;
 }
 
 .price-list__body {
-  margin-left: 115px;
+  margin-left: 155px;
   color: #32495e;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .price-list__subtitle {
@@ -1143,12 +1142,13 @@ footer .footer__contacts .footer__contacts__block {
 
 .price-list__price {
   font-weight: bolder;
+  margin-bottom: 40px;
 }
 
 .btn-read-all {
-  width: 188px;
+  width: 160px;
   height: 50px;
-  border-radius: 15px;
+  border-radius: 30px;
   color: #32495e;
   border-color: #32495e;
   margin-top: 50px;
@@ -1165,18 +1165,16 @@ footer .footer__contacts .footer__contacts__block {
 }
 
 .qanda__title {
-  margin-top: 60px;
-  background-color: rgba(128, 147, 172, 0.4);
-  padding-left: 115px;
+  background-color: #8093AC;
+  padding-left: 140px;
   height: 68px;
   color: white;
-  font-family: 'TTHoves' !important;
-  font-weight: 800;
+  font-family: TT Hoves;
 }
 
 .qanda__body {
   margin-top: 64px;
-  margin-left: 68px;
+  margin-left: 115px;
   color: white;
 }
 
@@ -1185,7 +1183,7 @@ footer .footer__contacts .footer__contacts__block {
 }
 
 .form-check-label {
-  padding-right: 172px;
+  padding-right: 178px;
   font-weight: bolder;
 }
 
@@ -1433,48 +1431,77 @@ footer .footer__contacts .footer__contacts__block {
 .social {
   position: fixed;
   z-index: 20;
-  right: 150px;
-  top: calc(30vw - 27px);
+  right: calc(10vw - 25px * 4);
   margin: auto;
+  top: calc(30vw - 25px - 10px);
 }
 
-.social-all {
-  list-style-type: none;
-  position: absolute;
-  top: 10px;
-  right: 85px;
+@media screen and (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .social {
+    right: calc(10vw - 25px * 2);
+  }
+}
+
+.social__position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  visibility: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  overflow: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  gap: 20px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  background-color: transparent;
 }
 
-input[id=chb-social]:checked ~ .social-all {
-  visibility: inherit;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+.social__position_elements {
+  margin-right: calc(-25px * 2);
+  padding-right: calc(25px * 2);
+  height: calc(25px * 2 + 25px * 2);
+}
+
+.social-all {
+  list-style-type: none;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 25px;
+  opacity: 0;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 25;
+}
+
+.transform-active {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .btn-social {
-  height: 50px;
-  width: 50px;
-  color: #F9F9F9;
-  border-radius: 50%;
-  border: #F9F9F9 1px solid;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  height: calc(25px * 2);
+  width: calc(25px * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,14 +1511,21 @@ input[id=chb-social]:checked ~ .social-all {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #F9F9F9;
+  border-radius: 50%;
+  border: #F9F9F9 1px solid;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
 }
 
 .btn-social_all {
   -webkit-box-shadow: 0px 0px 0px 5px rgba(240, 121, 126, 0.3);
           box-shadow: 0px 0px 0px 5px rgba(240, 121, 126, 0.3);
   background-color: #F0797E;
-  width: 70px;
-  height: 70px;
+  width: calc(25px * 2);
+  height: calc(25px * 2);
+  margin: 25px;
+  z-index: 30;
 }
 
 .btn-social_all:hover {
@@ -1545,4 +1579,64 @@ input[id=chb-social]:checked ~ .social-all {
 
 .btn-social__icon {
   background-color: transparent;
+}
+
+.qanda {
+  background-color: #32495E;
+}
+
+.qanda__title {
+  background-color: #8093AC;
+  padding-left: 140px;
+  height: 68px;
+  color: white;
+  font-family: TT Hoves;
+}
+
+.qanda__body {
+  margin-top: 64px;
+  margin-left: 115px;
+  color: white;
+}
+
+.form-check {
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  padding-right: 178px;
+  font-weight: bolder;
+}
+
+.form-check-input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  content: url("/assets/img/qanda_images/Component.png");
+  display: inline-block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.form-check-input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  content: url("/assets/img/qanda_images/Componentred.png");
+  display: inline-block;
+  visibility: visible;
+}
+
+.qanda__body-answer {
+  padding-right: 115px;
+}
+
+.qanda__body-answer-title {
+  margin-bottom: 20px;
 }

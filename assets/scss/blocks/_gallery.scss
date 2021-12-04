@@ -14,6 +14,14 @@
     padding: 7.2rem;
     height: 100%;
     width: 100%;
+
+    @media screen and (max-width: 1200px) {
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 1rem;
+    }
 }
 
 .gallery-nav-item {
@@ -41,6 +49,16 @@
     max-width: 25%;
     padding-left: 0px;
     padding-right: 0px;
+
+    @media screen and (max-width: 1200px) {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 .image-button {
@@ -53,29 +71,29 @@
     color: $color-light;
 }
 
-@media screen and (max-width: $desktop) {
+/*
+@media screen and (max-width: 1200px) {
     .column {
         flex: 50%;
         max-width: 50%;
 
     }
 
-    .body_gallery {
+    .gallery {
         padding: 1rem;
     }
 }
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: 600px) {
     .column {
         flex: 100%;
         max-width: 100%;
-
     }
 
-    .body_gallery {
+    .gallery {
         padding: 1rem;
     }
-}
+}*/
 
 .gallery-button {
     border-radius: 54px;

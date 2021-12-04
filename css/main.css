@@ -1124,13 +1124,13 @@ footer .footer__contacts .footer__contacts__block {
   color: #32495e;
   line-height: 52px;
   margin-bottom: 20px;
-  margin-left: 115px;
+  padding-left: 155px;
   margin-top: 70px;
   font-family: TT Hoves;
 }
 
 .price-list__body {
-  margin-left: 115px;
+  margin-left: 155px;
   color: #32495e;
   width: 100%;
 }

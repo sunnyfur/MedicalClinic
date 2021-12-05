@@ -1114,6 +1114,7 @@ footer .footer__up__background {
   margin-left: 155px;
   margin-right: 115px;
   color: #32495e;
+  padding: 2rem;
 }
 
 .card {
@@ -1725,7 +1726,7 @@ footer .footer__up__background {
   border-bottom: 1px solid red;
 }
 
-.row {
+.row_gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

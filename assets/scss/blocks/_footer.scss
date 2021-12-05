@@ -17,6 +17,10 @@ footer {
         font-size: 14px;
         line-height: 17px;
         color: $white;
+
+        .footer__up__text {
+            transform: rotate(-90deg);
+        }
     }
 
     .footer__title {
@@ -30,6 +34,7 @@ footer {
 
     .footer__contacts {
         display: flex;
+        width: 60vw;
         justify-content: space-between;
 
         .footer__contacts__block {
@@ -43,11 +48,8 @@ footer {
             .footer__contacts__block_nav {}
 
             .footer__contacts__block_info {}
-        }
-    }
 
-    .footer__up__text {
-        transform: rotate(-90deg);
+        }
     }
 
     .footer__up__background {

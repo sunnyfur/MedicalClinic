@@ -1,6 +1,7 @@
 .recomendation {
     width: 80vw;
     margin: 0 auto;
+    background-color:$white;
 }
 .recomendation__text {
     margin-top: 70px;
@@ -22,12 +23,12 @@
 .recomendation__items {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     @media screen and (max-width:$tablet) {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
     @media screen and (max-width:$mobile) {
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
     .recomendation__item {
         .recomendation_img {
@@ -39,6 +40,7 @@
 .contacts {
     width: 80vw;
     margin: 0 auto;
+    background-color:$white;
 }
 .contacts__text {
     color: $dark-grey;

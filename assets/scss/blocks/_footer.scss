@@ -1,11 +1,13 @@
 footer {
     display: flex;
     background-color: #333333;
-    color: #F9F9F9;
+    color: $white;
     font-style: normal;
     width: 100vw;
     padding-left: 115px;
     padding-right: 115px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: space-between;
 
     .footer__text {
@@ -28,10 +30,12 @@ footer {
 
     .footer__contacts {
         display: flex;
+        justify-content: space-between;
 
         .footer__contacts__block {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
 
 
             .footer__contacts__block_logo {}
@@ -42,5 +46,19 @@ footer {
         }
     }
 
+    .footer__up__text {
+        transform: rotate(-90deg);
+    }
+
+    .footer__up__background {
+        background-color: $coral;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
 
 }

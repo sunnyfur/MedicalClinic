@@ -766,7 +766,7 @@ footer .footer__up__background {
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "i1 c1" "c2 i2";
+      grid-template-areas: "i1 c1" "c2 i2";
   color: #F9F9F9;
 }
 
@@ -1145,6 +1145,7 @@ footer .footer__up__background {
 .price-list {
   background-image: url("/assets/img/pricelist_images/Group_104.jpg");
   background-size: cover;
+  padding: 2rem;
 }
 
 .price-list__title {
@@ -1858,7 +1859,7 @@ footer .footer__up__background {
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "menu-stuff menu-stuff" "title-stuff title-stuff";
+      grid-template-areas: "menu-stuff menu-stuff" "title-stuff title-stuff";
 }
 
 @media screen and (max-width: 1200px) {
@@ -2081,4 +2082,3 @@ footer .footer__up__background {
   text-align: left;
   color: #F9F9F9;
 }
-/*# sourceMappingURL=main.css.map */

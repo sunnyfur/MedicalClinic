@@ -13,13 +13,28 @@
 </head>
 
 <body>
-    <div class="trauma-block">
-        <div class="container container__menu">
-            <div class="row row__menu">
-                <div class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fiuid">
+    <div class="header">
+        <div class="header-menu__container">
+
+            <div class="header__logo">
+                <div class="logo__img">
+                    <a class="logo__link" href="#"> <img src="/assets/img/logo.svg" alt="logo"></a>
+                </div>
+                <a href="#" class="logo__link">
+                    <div class="logo__text logo-title_dark">TULPAR</div>
+                </a>
+            </div>
+            <div class="navbar navbar-expand-lg navbar-light">
+                <button class="header-menu__button navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarTogglerDemo03">
+
+                    <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar__index navbar navbar-nav me-auto mb-2">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Главная</a>
                                 </li>
@@ -29,16 +44,19 @@
                                         Наши услуги
                                     </a>
                                     <ul class=" dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a>
+                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный
+                                                центр</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a>
+                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный
+                                                центр</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный центр</a>
+                                        <li><a class="dropdown-item" href="#">Травма-реабилитационный
+                                                центр</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный центр</a>
+                                        <li><a class="dropdown-item" href="#">Кардио-реабилитационный
+                                                центр</a>
                                         </li>
                                     </ul>
-
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Отчёты</a>
@@ -72,40 +90,52 @@
                 </div>
             </div>
         </div>
-        <div class="header__text text_trauma">
-            <h1 class="header__title"><a class="title__link title__link_trauma" href="#">Травма-реабилитационный
-                    центр</a></h1>
-            <div class="header__discription">Lorem Ipsum is simply dummy text of the printing
-                and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+        <div class="header__wrapper">
+            <div class="trauma-block_big">
+                <div class="header__text text_trauma">
+                    <h1 class="main-title"><a class="title__link title__link_trauma" href="#">Травма-реабилитационный
+                            <br>
+                            центр</a></h1>
+                    <div class="header__discription_big">Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the
+                    </div>
+                    <ul class="header__services">
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                        <a class="services-item__link" href="#">
+                            <li class="services-item services-item_trauma">Название услуги</li>
+                        </a>
+                    </ul>
+                    <div class="button__position">
+                        <a class="common__button button__text common__button_dark" href="#">Все услуги</a>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icons__item icons__instagram">
+                            <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                        </div>
+
+                        <div class="social-icons__item icons__edit">
+                            <a href="#" target="_blank"><i class="fa fa-pencil-square-o fa-2x"></i></a>
+                        </div>
+                        <div class="social-icons__item icons__whatsapp">
+                            <a href="#" target="_blank"><i class="fa fa-whatsapp fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="header__services">
-                <a class="services-item__link" href="#">
-                    <li class="services-item services-item_trauma">Название услуги</li>
-                </a>
-                <a class="services-item__link" href="#">
-                    <li class="services-item services-item_trauma">Название услуги</li>
-                </a>
-                <a class="services-item__link" href="#">
-                    <li class="services-item services-item_trauma">Название услуги</li>
-                </a>
-                <a class="services-item__link" href="#">
-                    <li class="services-item services-item_trauma">Название услуги</li>
-                </a>
-            </ul>
-            <button class="button header__button button_grey">
-                <div class="button__text text_grey">Все услуги</div>
-            </button>
-            <ul class="social-icons">
-                <li><a class="social-icon-instagram" href="#" title="..." target="_blank" rel="noopener"></a>
-                </li>
-                <li><a class="social-icon-call" href="#" title="..." target="_blank" rel="noopener"></a></li>
-                <li><a class="social-icon-twitter" href="#" title="..." target="_blank" rel="noopener"></a></li>
-                <li><a class="social-icon-watsapp" href="#" title="..." target="_blank" rel="noopener"></a>
-                </li>
-            </ul>
         </div>
     </div>
+    </header>
 
     <main>
         <section class="services">
@@ -117,9 +147,11 @@
 
                     <img class="list-blocks__img " src="/assets/img/service_img/service1.png" alt="новость 1" />
                     <div class="description description_service ">
-                        <h3 class="description__title description__title_service small-title">Кардио-реаблитационный
+                        <h3 class="description__title description__title_service small-title">
+                            Кардио-реаблитационный
                             центр</h3>
-                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
                             industry</p>
 
                     </div>
@@ -127,9 +159,11 @@
                 <li class="list-blocks__element  ">
                     <img class="list-blocks__img " src="/assets/img/service_img/service2.png" alt="новость 1" />
                     <div class="description description_service ">
-                        <h3 class="description__title description__title_service small-title">Травма-реабилитационный
+                        <h3 class="description__title description__title_service small-title">
+                            Травма-реабилитационный
                             центр</h3>
-                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
                             industry</p>
 
                     </div>
@@ -137,10 +171,12 @@
                 <li class="list-blocks__element  ">
                     <img class="list-blocks__img " src="/assets/img/service_img/service3.png" alt="новость 1" />
                     <div class="description description_service ">
-                        <h3 class="description__title description__title_service small-title">Кафе еда и еще слова что
+                        <h3 class="description__title description__title_service small-title">Кафе еда и еще
+                            слова что
                             бы
                             было две строки</h3>
-                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
                             industry</p>
 
                     </div>
@@ -148,9 +184,11 @@
                 <li class="list-blocks__element  ">
                     <img class="list-blocks__img " src="/assets/img/service_img/service4.png" alt="новость 1" />
                     <div class="description description_service ">
-                        <h3 class="description__title description__title_service small-title">Сауна высшего класса для
+                        <h3 class="description__title description__title_service small-title">Сауна высшего
+                            класса для
                             восстановления</h3>
-                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p class="description__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
                             industry</p>
 
                     </div>

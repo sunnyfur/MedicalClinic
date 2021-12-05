@@ -1,0 +1,46 @@
+.logo-title_dark {
+    @include titles;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $dark-grey;
+    
+    text-decoration: none;
+} 
+.trauma-block_big {
+    width: 100%;
+    padding-top: 15%;
+    margin-bottom: 10%;
+    background: url(/assets/img/header_img/bg_usluga_1.png) bottom right no-repeat;
+    @media screen and (max-width:$big-tablet) {
+        max-height: 100%;
+        width: 100vw;
+        background-size: 40%;
+    }
+    }
+    .text_trauma {
+        padding-left: 10%;
+        align-items: start;
+        text-align: left;
+        color: $dark-grey;
+        
+        }
+        .title__link_trauma{
+            color: $dark-grey;
+            &:hover {
+                color: $coral; 
+            }
+        }
+        .header__title {
+            text-decoration: none;
+        }
+        .services-item_trauma {
+            &:hover {
+                color: $coral;
+            }      
+        }
+        .header__discription_big {
+            max-width: 460px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }

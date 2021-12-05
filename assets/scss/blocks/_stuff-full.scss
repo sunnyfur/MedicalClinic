@@ -1,0 +1,140 @@
+.header-stuff {
+    background-image: url(/assets/img/header_img/stuff_header.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 393px;
+    width: auto;
+    overflow: visible;
+
+    @media screen and (max-width: 1200px) {
+        height: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: auto;
+    }
+
+}
+
+.header_stuff-full_container {
+    font-family: $default-font;
+    font-size: 2rem;
+    padding: 15px 115px 60px 115px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "menu-stuff menu-stuff"
+        "title-stuff title-stuff";
+
+    @media screen and (max-width: 1200px) {
+        padding: 15px 50px 30px 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 15px 40px 0px 40px;
+    }
+}
+
+.menu_stuff-full {
+    grid-area: menu-stuff;
+}
+
+.main-title_stuff-full {
+    grid-area: title-stuff;
+
+}
+
+
+.nav-item {
+    font-family: $default-font;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $color-light;
+}
+
+.main-title {
+    font-family: $default-font;
+    font-size: 50px;
+    color: $color-light;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 25px;
+    }
+
+
+}
+
+.row_stuff-full {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 7.2rem;
+
+    @media screen and (max-width: 1200px) {
+        padding: 40px 7rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 40px 2rem;
+    }
+}
+
+.column_stuff-full {
+    flex: 25%;
+    max-width: 25%;
+    padding-left: 0px;
+    padding-right: 50px;
+
+    @media screen and (max-width: 1200px) {
+        flex: 50%;
+        max-width: 50%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex: 100%;
+        max-width: 100%;
+        padding-right: 0px;
+    }
+}
+
+
+
+
+.card__title {
+    font-family: $default-font;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+
+}
+
+.card__image {
+    height: 98px;
+    width: 98px;
+    margin-bottom: 30px;
+    margin: 0px 10px 30px 10px;
+}
+
+.card__text {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card {
+    margin-bottom: 50px;
+    margin-right: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.25);
+}

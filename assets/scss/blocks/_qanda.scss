@@ -3,19 +3,19 @@
 
 
     &__title {
-        margin-top: 60px;
-        background-color: rgba(128, 147, 172, 0.4);
-        padding-left: 115px;
+        background-color: #8093AC;
+        padding-left: 140px;
         height: 68px;
         color: white;
-        font-family: 'TTHoves' !important;
-        font-weight: 800;
+        font-family: TT Hoves;
+       
     }
 
     &__body {
         margin-top: 64px;
-        margin-left: 68px;
+        margin-left: 115px;
         color: white;
+       
     }
 }
 
@@ -23,7 +23,7 @@
     margin-bottom: 20px;
 
     &-label {
-        padding-right: 172px;
+        padding-right: 178px;
         font-weight: bolder;
     }
 
@@ -34,7 +34,7 @@
         top: -2px;
         left: -1px;
         position: relative;
-        content: url("/assets/img/qanda_images/Component.png");
+        content: url('/assets/img/qanda_images/Component.png');
         display: inline-block;
         visibility: visible;
         cursor: pointer;
@@ -48,7 +48,7 @@
         top: -2px;
         left: -1px;
         position: relative;
-        content: url("/assets/img/qanda_images/Componentred.png");
+        content: url('/assets/img/qanda_images/Componentred.png');
         display: inline-block;
         visibility: visible;
 

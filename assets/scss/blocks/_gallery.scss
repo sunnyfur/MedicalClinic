@@ -1,0 +1,133 @@
+.gallery-title {
+    @include titles;
+    font-size: 44px;
+    color: $color-light;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    background-image: url("/assets/img/Gallery/gallery-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 7.2rem;
+    height: 100%;
+    width: 100%;
+
+    @media screen and (max-width: 1200px) {
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 1rem;
+    }
+}
+
+.gallery-nav-item {
+    color: $color-light;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 14px;
+
+    &:hover {
+        color: $color-light;
+        border-bottom: 1px solid red;
+    }
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @media screen and (max-width: 1200px) {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.image-button {
+    border-radius: 54px;
+    background-color: $color-dark;
+    opacity: 0.6;
+    width: 159px;
+    height: 60px;
+    margin: auto;
+    color: $color-light;
+}
+
+
+.gallery-button {
+    border-radius: 54px;
+    background-color: $color-dark;
+    width: 159px;
+    height: 60px;
+    margin: auto;
+    background-color: transparent;
+    color: $color-light;
+
+}
+
+
+.image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-content_video {
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+
+}
+
+.image-content_text {
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+
+}
+
+.image {
+    opacity: 0.6;
+    position: relative;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+.image1 {
+    width: 100%;
+    height: 100%;
+}
+
+.image-no-bg {
+    opacity: 1;
+}
+
+.image-text {
+    color: $color-light;
+    font-size: 16px;
+    padding-right: 2vw;
+    margin-top: 11px;
+}

@@ -5,6 +5,7 @@
 .recomendation__text {
     margin-top: 70px;
     margin-bottom: 70px;
+    color: $dark-grey;
     @media screen and (max-width:$large-desktop) {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -40,6 +41,7 @@
     margin: 0 auto;
 }
 .contacts__text {
+    color: $dark-grey;
     @media screen and (max-width:$large-desktop) {
         margin-bottom: 40px;
         }
@@ -56,6 +58,7 @@
     
 }
 .contacts__items {
+    color: $dark-grey;
     margin-bottom: 60px;
     @media screen and (max-width:$tablet) {
         margin-bottom: 40px;

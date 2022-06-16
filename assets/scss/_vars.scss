@@ -1,44 +1,41 @@
 // colors
 // $coral:#E95258;
-$coral:#F0797E;
-$dark-grey:#32495E;
-$light-grey:#8093AC;
-$white:#F9F9F9;
-$dark-blue:#0E2942;
-$dark:#333333;
+$coral: #f0797e;
+$dark-grey: #32495e;
+$light-grey: #8093ac;
+$white: #f9f9f9;
+$dark-blue: #0e2942;
+$dark: #333333;
 
-$green: #14AC51;
-$blue:#4598FF;
-$magenta:#c2568a;
-$yellow:#fab025;
+$green: #14ac51;
+$blue: #4598ff;
+$magenta: #c2568a;
+$yellow: #fab025;
 
-// names of colors 
-$color-acent:$coral;
-$color-dark:$dark-grey;
-$color-acent-dark:$dark-blue;
+// names of colors
+$color-acent: $coral;
+$color-dark: $dark-grey;
+$color-acent-dark: $dark-blue;
 
+$color-light: $white;
+$color-midle: $light-grey;
 
-$color-light:$white;
-$color-midle:$light-grey;
-
-$color-black:$dark;
-
+$color-black: $dark;
 
 //colors for socials
-$color-social-all:$color-acent;
-$color-social-chat:$green;
-$color-social-mail:$blue;
-$color-social-phone:$yellow;
-$color-social-inst:$magenta;
+$color-social-all: $color-acent;
+$color-social-chat: $green;
+$color-social-mail: $blue;
+$color-social-phone: $yellow;
+$color-social-inst: $magenta;
 
+$gutter-ab: 10vw;
+$container: 80vw;
 
+$mobile: 375px;
+$tablet: 768px;
+$big-tablet: 1025px;
+$desktop: 1280px;
+$large-desktop: 1560px;
 
-
-
-$mobile:375px;
-$tablet:768px;
-$big-tablet:1025px;
-$desktop:1280px;
-$large-desktop:1560px;
-
-$text:14px;
+$text: 14px;

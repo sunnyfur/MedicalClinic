@@ -1,65 +1,124 @@
 body {
-    font-family: $default-font;
-    // font-size: $text;
+  font-family: $default-font;
+  // font-size: $text;
 }
 
 .body {
-    font-size: 16px;
+  font-size: 16px;
 
-    @media (max-width:$desktop) {
-        font-size: 14px;
-    }
-
-
+  @media (max-width: $desktop) {
+    font-size: 14px;
+  }
 }
-
 
 .logo {
-    height: 100px;
-    @include logoMix($color-acent, $color-light);
+  height: 100px;
+  @include logoMix($color-acent, $color-light);
 }
 
+.logo_about {
+  width: 70px;
+  height: 50px;
+  @include logoMix($color-acent, $color-light);
+}
+
+.logo_black {
+  width: 70px;
+  height: 50px;
+  @include logoMix($color-dark, $color-light);
+}
+
+.logo_usluga {
+  width: 70px;
+  height: 50px;
+  @include logoMix($color-dark, $color-acent);
+}
 
 .main-title {
-    @include titles;
-    font-size: 3.5rem;
+  @include titles;
+  font-size: 3.5rem;
 
-    @media (max-width:$big-tablet) {
-        font-size: 2.5rem;
-    }
+  @media (max-width: $big-tablet) {
+    font-size: 2.5rem;
+  }
 
-    @media (max-width:$tablet) {
-        font-size: 2rem;
-    }
+  @media (max-width: $tablet) {
+    font-size: 2rem;
+  }
 
-    @media (max-width:550px) {
-        font-size: 1.2rem;
-    }
+  @media (max-width: 550px) {
+    font-size: 1.2rem;
+  }
 
-    @media (max-width:$mobile) {
-        font-size: 1rem;
-    }
+  @media (max-width: $mobile) {
+    font-size: 1.2rem;
+  }
 }
 
 .sub-title {
-    @include titles;
-    font-size: 2.5rem;
-    margin: 0.5em 20px;
+  @include titles;
+  font-size: 2.5rem;
+  margin: 0.5em 20px;
 
-    @media (max-width: $desktop) {
-        font-size: 2rem;
-    }
+  @media (max-width: $desktop) {
+    font-size: 2rem;
+  }
 
-    @media (max-width: $big-tablet) {
-        font-size: 1.8rem;
-    }
+  @media (max-width: $big-tablet) {
+    font-size: 1.8rem;
+  }
 
-    @media (max-width: $mobile) {
-        font-size: 7vw;
-    }
+  @media (max-width: $mobile) {
+    font-size: 7vw;
+  }
 }
 
 .small-title {
-    font-size: 1.2rem;
-    font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.logo-title {
+  // margin-left: 20px;
+  font-size: 40px;
+
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    font-size: 42px;
+
+    color: $white;
+    text-decoration: none;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 30px;
+
+    &:hover {
+      font-size: 32px;
+    }
+  }
+}
+
+.logo-title_dark {
+  font-size: 40px;
+
+  color: $dark-grey;
+  text-decoration: none;
+
+  &:hover {
+    font-size: 42px;
+
+    color: $dark-grey;
+    text-decoration: none;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 30px;
+
+    &:hover {
+      font-size: 32px;
+    }
+  }
 }

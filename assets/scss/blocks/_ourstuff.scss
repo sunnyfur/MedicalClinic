@@ -1,42 +1,48 @@
 .ourstuff__title {
-    background: rgba(50, 73, 94, 1);
-    color: white;
-    padding-left: 155px;
-    line-height: 52px;
-    margin-bottom: 50px;
-    font-family: TT Hoves;
+  background: $color-dark;
+  color: $color-light;
+  //   padding-left: 155px;
+  line-height: 52px;
+  margin-bottom: 50px;
+
+  padding-left: 115px;
+  line-height: 52px;
+  margin-top: 70px;
+
+  .sub-title {
+    padding-left: 9vw;
+  }
 }
 
 .ourstuff__body {
-    margin-left: 155px;
-    margin-right: 115px;
-    color: rgba(50, 73, 94, 1);
-    padding: 2rem;
+  margin-left: 155px;
+  margin-right: 115px;
+  color: rgba(50, 73, 94, 1);
+  padding: 2rem $gutter-ab;
 }
 
 .card {
-    margin-bottom: 50px;
-    margin-right: 68px;
-    border: none;
+  margin-bottom: 50px;
+  margin-right: 68px;
+  border: none;
 
-&__image {
+  &__image {
     height: 98px;
     width: 98px;
     margin-bottom: 30px;
-}
+  }
 }
 
 .btn-outline-info {
-    width: 160px;
-    height: 50px;
-    border-radius: 30px;
-    color: rgba(50, 73, 94, 1);
+  width: 160px;
+  height: 50px;
+  border-radius: 30px;
+  color: rgba(50, 73, 94, 1);
+  border-color: rgba(50, 73, 94, 1);
+
+  &:hover {
+    background-color: rgba(50, 73, 94, 1);
+    color: white;
     border-color: rgba(50, 73, 94, 1);
-
-    &:hover {
-        background-color: rgba(50, 73, 94, 1);
-        color: white;
-        border-color: rgba(50, 73, 94, 1);;
-    }
+  }
 }
-

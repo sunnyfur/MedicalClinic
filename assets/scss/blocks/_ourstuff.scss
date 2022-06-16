@@ -1,17 +1,24 @@
 .ourstuff__title {
-  background: rgba(50, 73, 94, 1);
-  color: white;
+  background: $color-dark;
+  color: $color-light;
   //   padding-left: 155px;
   line-height: 52px;
   margin-bottom: 50px;
-  font-family: TT Hoves;
+
+  padding-left: 115px;
+  line-height: 52px;
+  margin-top: 70px;
+
+  .sub-title {
+    padding-left: 9vw;
+  }
 }
 
 .ourstuff__body {
   margin-left: 155px;
   margin-right: 115px;
   color: rgba(50, 73, 94, 1);
-  padding: 2rem;
+  padding: 2rem $gutter-ab;
 }
 
 .card {
@@ -37,11 +44,5 @@
     background-color: rgba(50, 73, 94, 1);
     color: white;
     border-color: rgba(50, 73, 94, 1);
-  }
-}
-
-.ourstuff {
-  .sub-title {
-    margin-left: 10vw;
   }
 }

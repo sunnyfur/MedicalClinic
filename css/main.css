@@ -275,18 +275,18 @@ body {
   line-height: 17px;
 }
 
-.header__text .header__services .services-item__link {
-  text-decoration: none;
-  color: #32495e;
-}
-
-.header__text .header__services .services-item__link:last-child {
+.header__text .header__services:last-child {
   margin-bottom: 0px;
 }
 
-.header__text .header__services .services-item__link .services-item {
+.header__text .header__services .services-item {
   margin-bottom: 12px;
   list-style-type: circle;
+}
+
+.header__text .header__services .services-item__link {
+  text-decoration: none;
+  color: #32495e;
 }
 
 .text_cardio {
@@ -869,17 +869,23 @@ footer .footer__up__background {
 
 .ourstuff__title {
   background: #32495e;
-  color: white;
+  color: #f9f9f9;
   line-height: 52px;
   margin-bottom: 50px;
-  font-family: TT Hoves;
+  padding-left: 115px;
+  line-height: 52px;
+  margin-top: 70px;
+}
+
+.ourstuff__title .sub-title {
+  padding-left: 9vw;
 }
 
 .ourstuff__body {
   margin-left: 155px;
   margin-right: 115px;
   color: #32495e;
-  padding: 2rem;
+  padding: 2rem 10vw;
 }
 
 .card {
@@ -908,14 +914,10 @@ footer .footer__up__background {
   border-color: #32495e;
 }
 
-.ourstuff .sub-title {
-  margin-left: 10vw;
-}
-
 .price-list {
   background-image: url("/assets/img/pricelist_images/Group_104.jpg");
   background-size: cover;
-  padding: 2rem;
+  padding: 2rem 10vw;
 }
 
 .price-list__title {
@@ -962,21 +964,34 @@ footer .footer__up__background {
 }
 
 .qanda {
-  background-color: #32495E;
+  background-color: #32495e;
+}
+
+.qanda__container {
+  padding: 2rem 10vw;
+}
+
+.qanda .sub-title {
+  padding-left: 9vw;
 }
 
 .qanda__title {
-  background-color: #8093AC;
-  padding-left: 140px;
+  background-color: #8093ac;
   height: 68px;
-  color: white;
+  color: #f9f9f9;
   font-family: TT Hoves;
 }
 
 .qanda__body {
   margin-top: 64px;
   margin-left: 115px;
-  color: white;
+  color: #f9f9f9;
+}
+
+.qanda__body-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .form-check {
@@ -988,7 +1003,7 @@ footer .footer__up__background {
   font-weight: bolder;
 }
 
-.form-check-input[type='radio']:after {
+.form-check-input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -1001,7 +1016,7 @@ footer .footer__up__background {
   cursor: pointer;
 }
 
-.form-check-input[type='radio']:checked:after {
+.form-check-input[type="radio"]:checked:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -1348,21 +1363,34 @@ footer .footer__up__background {
 }
 
 .qanda {
-  background-color: #32495E;
+  background-color: #32495e;
+}
+
+.qanda__container {
+  padding: 2rem 10vw;
+}
+
+.qanda .sub-title {
+  padding-left: 9vw;
 }
 
 .qanda__title {
-  background-color: #8093AC;
-  padding-left: 140px;
+  background-color: #8093ac;
   height: 68px;
-  color: white;
+  color: #f9f9f9;
   font-family: TT Hoves;
 }
 
 .qanda__body {
   margin-top: 64px;
   margin-left: 115px;
-  color: white;
+  color: #f9f9f9;
+}
+
+.qanda__body-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .form-check {
@@ -1374,7 +1402,7 @@ footer .footer__up__background {
   font-weight: bolder;
 }
 
-.form-check-input[type='radio']:after {
+.form-check-input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -1387,7 +1415,7 @@ footer .footer__up__background {
   cursor: pointer;
 }
 
-.form-check-input[type='radio']:checked:after {
+.form-check-input[type="radio"]:checked:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;

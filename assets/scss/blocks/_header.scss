@@ -1,240 +1,222 @@
 .header-menu__container {
-    position: absolute;
-    // width: 100%;
+  position: absolute;
+  // width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    left: $gutter-ab;
-    right: $gutter-ab;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: $gutter-ab;
+  right: $gutter-ab;
 }
 
-
 .navbar__index {
-    &:last-child {
-        margin-right: 50px;
-    }
+  &:last-child {
+    margin-right: 50px;
+  }
 }
 
 .header-menu__button {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .header__wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    // height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  // height: 100%;
 
-    @media screen and (max-width:$big-tablet) {
-        display: flex;
-        flex-direction: column;
-    }
+  @media screen and (max-width: $big-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .cardio-block {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 20vh;
-    background: url(/assets/img/header_img/cardio_main.png) bottom left no-repeat;
-    background-color: $coral;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+  background: url(/assets/img/header_img/cardio_main.png) bottom left no-repeat;
+  background-color: $coral;
 
-    @media screen and (max-width:$big-tablet) {
-        width: 100%;
-        // background-size: 40%;
-    }
+  @media screen and (max-width: $big-tablet) {
+    width: 100%;
+    // background-size: 40%;
+  }
 }
 
 .header__text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
 
-
-
-    .header__title {
-        @include titles;
-        // font-size: 28px;
-        color: $white;
-        font-style: normal;
-        font-weight: 700;
-
-        .title__link {
-            text-decoration: none;
-        }
-
-    }
-
-    .header__discription {
-        max-width: 220px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        font-style: 14px;
-        font-weight: 600px;
-    }
-
-    .header__services {
-        font-size: 14px;
-        line-height: 17px;
-
-        .services-item__link {
-            text-decoration: none;
-            color: $dark-grey;
-
-            &:last-child {
-                margin-bottom: 0px;
-            }
-
-            .services-item {
-                margin-bottom: 12px;
-                list-style-type: circle;
-
-            }
-        }
-    }
-}
-
-.text_cardio {
-    margin-bottom: 50px;
-    text-align: right;
-    align-items: end;
-    padding-right: 10%;
+  .header__title {
+    @include titles;
+    // font-size: 28px;
     color: $white;
+    font-style: normal;
+    font-weight: 700;
 
-    .title__link_cardio {
-        color: $white;
-        max-width: 100vw;
-
-        &:hover {
-            color: $dark-grey;
-        }
-
+    .title__link {
+      text-decoration: none;
     }
+  }
 
-    .header__services_cardio {
-        direction: rtl;
-        float: right;
+  .header__discription {
+    max-width: 220px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-style: 14px;
+    font-weight: 600px;
+  }
 
-        .services-item__link {
-            text-decoration: none;
-            color: $white;
-        }
-
-        .services-item_cardio {
-            &:hover {
-                color: $dark-grey;
-            }
-        }
+  .header__services {
+    font-size: 14px;
+    line-height: 17px;
+    &:last-child {
+      margin-bottom: 0px;
     }
+    .services-item {
+      margin-bottom: 12px;
+      list-style-type: circle;
+    }
+    .services-item__link {
+      text-decoration: none;
+      color: $dark-grey;
+    }
+  }
 }
 
 .text_cardio {
-    .button__position {
-        display: flex;
-        justify-content: center;
+  margin-bottom: 50px;
+  text-align: right;
+  align-items: end;
+  padding-right: 10%;
+  color: $white;
+
+  .title__link_cardio {
+    color: $white;
+    max-width: 100vw;
+
+    &:hover {
+      color: $dark-grey;
+    }
+  }
+
+  .header__services_cardio {
+    direction: rtl;
+    float: right;
+
+    .services-item__link {
+      text-decoration: none;
+      color: $white;
     }
 
-    .common__button {
-
-
-        &:hover {
-            border: 1px solid $color-dark;
-            background: $color-dark;
-            transition: 0.9s ease-out;
-            color: $color-light;
-
-        }
+    .services-item_cardio {
+      &:hover {
+        color: $dark-grey;
+      }
     }
+  }
+}
 
+.text_cardio {
+  .button__position {
+    display: flex;
+    justify-content: center;
+  }
 
-    .button__text {
-        text-decoration: none;
-        color: $color-light;
+  .common__button {
+    &:hover {
+      border: 1px solid $color-dark;
+      background: $color-dark;
+      transition: 0.9s ease-out;
+      color: $color-light;
     }
+  }
+
+  .button__text {
+    text-decoration: none;
+    color: $color-light;
+  }
 }
 
 .trauma-block {
-    width: 100%;
-    height: 100vh;
-    padding-top: 20vh;
-    background: url(/assets/img/header_img/trauma_main.png) bottom right no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding-top: 20vh;
+  background: url(/assets/img/header_img/trauma_main.png) bottom right no-repeat;
 
-    @media screen and (max-width:$big-tablet) {
-        max-height: 100%;
-        width: 100vw;
-        background-size: 40%;
-    }
+  @media screen and (max-width: $big-tablet) {
+    max-height: 100%;
+    width: 100vw;
+    background-size: 40%;
+  }
 }
 
 .text_trauma {
-    padding-left: 10%;
-    align-items: start;
-    text-align: left;
-    color: $dark-grey;
-
+  padding-left: 10%;
+  align-items: start;
+  text-align: left;
+  color: $dark-grey;
 }
 
 .title__link_trauma {
-    color: $dark-grey;
+  color: $dark-grey;
 
-    &:hover {
-        color: $coral;
-    }
+  &:hover {
+    color: $coral;
+  }
 }
 
 .link_common {
-    text-decoration: none;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .services-item_trauma {
-    &:hover {
-        color: $coral;
-    }
+  &:hover {
+    color: $coral;
+  }
 }
 
 .text_trauma {
-    .button__position {
-        display: flex;
-        justify-content: center;
-    }
-
-
+  .button__position {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .common__button_dark {
-    border: 1px solid $color-dark;
-    color: $color-light;
+  border: 1px solid $color-dark;
+  color: $color-light;
 }
 
 .button__text {
-    text-decoration: none;
-    color: $color-dark
+  text-decoration: none;
+  color: $color-dark;
 }
 
-
 .services-item__link_cardio {
-    color: $white;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
     text-decoration: none;
+    color: $color-dark;
+  }
 
-    &:hover {
-        text-decoration: none;
-        color: $color-dark;
-    }
+  &:last-child {
+    margin-bottom: 0px;
+  }
 
-    &:last-child {
-        margin-bottom: 0px;
-    }
-
-    .services-item {
-        margin-bottom: 12px;
-        list-style-type: circle;
-    }
+  .services-item {
+    margin-bottom: 12px;
+    list-style-type: circle;
+  }
 }

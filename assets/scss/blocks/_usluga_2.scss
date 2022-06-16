@@ -1,23 +1,26 @@
 .navbar_white {
-    color: $white;
+  color: $white;
 }
 
 .cardio-block_big {
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 15vh;
+  padding-bottom: 10%;
+  background: url(/assets/img/header_img/bg_usluga_2.png) bottom right no-repeat;
+  background-color: $coral;
+
+  @media screen and (max-width: $big-tablet) {
+    max-height: 100%;
     width: 100vw;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    background: url(/assets/img/header_img/bg_usluga_2.png) bottom right no-repeat;
-    background-color: $coral;
-    @media screen and (max-width:$big-tablet) {
-        max-height: 100%;
-        width: 100vw;
-        background-size: 40%;
-    }
-    .text_cardio {
-        padding-left: 10%;
-        align-items: start;
-        text-align: left;
-        color: $white;
-        
-        }
-    }
+    background-size: 40%;
+  }
+
+  .text_cardio {
+    padding-left: 10%;
+    align-items: start;
+    text-align: left;
+    color: $white;
+  }
+}

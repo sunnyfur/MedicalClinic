@@ -75,16 +75,19 @@
   .header__services {
     font-size: 14px;
     line-height: 17px;
-    &:last-child {
-      margin-bottom: 0px;
-    }
-    .services-item {
-      margin-bottom: 12px;
-      list-style-type: circle;
-    }
+
     .services-item__link {
       text-decoration: none;
       color: $dark-grey;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      .services-item {
+        margin-bottom: 12px;
+        list-style-type: circle;
+      }
     }
   }
 }

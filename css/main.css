@@ -275,18 +275,18 @@ body {
   line-height: 17px;
 }
 
-.header__text .header__services:last-child {
-  margin-bottom: 0px;
-}
-
-.header__text .header__services .services-item {
-  margin-bottom: 12px;
-  list-style-type: circle;
-}
-
 .header__text .header__services .services-item__link {
   text-decoration: none;
   color: #32495e;
+}
+
+.header__text .header__services .services-item__link:last-child {
+  margin-bottom: 0px;
+}
+
+.header__text .header__services .services-item__link .services-item {
+  margin-bottom: 12px;
+  list-style-type: circle;
 }
 
 .text_cardio {
@@ -1721,20 +1721,10 @@ footer .footer__up__background {
   color: rgba(255, 255, 255, 0.25);
 }
 
-.logo-title_dark {
-  font-family: "TTHoves", Arial, serif;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-left: 20px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #32495e;
-  text-decoration: none;
-}
-
 .trauma-block_big {
   width: 100%;
-  padding-top: 15%;
+  height: 100vh;
+  padding-top: 15vh;
   margin-bottom: 10%;
   background: url(/assets/img/header_img/bg_usluga_1.png) bottom right no-repeat;
 }
@@ -1782,7 +1772,8 @@ footer .footer__up__background {
 
 .cardio-block_big {
   width: 100vw;
-  padding-top: 15%;
+  height: 100vh;
+  padding-top: 15vh;
   padding-bottom: 10%;
   background: url(/assets/img/header_img/bg_usluga_2.png) bottom right no-repeat;
   background-color: #f0797e;
